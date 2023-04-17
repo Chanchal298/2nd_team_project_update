@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  packages booking form</title>
+        <style>
+body {
+  background-image: url("images/package.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+</head>
+      <body>
+        <form> 
+    <table width="30%" align="center" cellspacing="20"> 
+      <tr> 
+    <td colspan=10> 
+    <center><font size=10><b>Details</b></font></center>
+  </td>
+    </tr> 
+    <tr> 
+      <td>Username</td> 
+      <td><input type="text" name="username" id="username" size="30"></td>
+     </tr> 
+    <tr> 
+    <td>Name</td> 
+    <td><input type="text" name=textnames id="textname" size="30"></td> 
+    </tr> 
+    <tr>
+    <td>Sex</td> 
+    <td><input type="radio" name="sex" value="male" >Male 
+    <input type="radio" name="sex" value="Female" >Female</td>
+    </tr>
+    <tr> 
+      <td>Aadhar Card No.</td>
+      <td><input type="text" name="dob" id="dob" size="30"></td> 
+      </tr>
+
+      <tr> 
+        <td>Email Id</td> 
+        <td><input type="text" name="emailid" id="emailid" size="30"></td> 
+        </tr> 
+        <tr> 
+          <td>Mobile No. </td> 
+          <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+        </tr>
+        <tr>
+          <td>Check-In Date </td> 
+          <td><input type="date" id="checkin-date" name="checkin" required></td>
+        </tr>
+        <tr>
+          <td>Check-Out Date </td> 
+          <td><input type="date" id="checkout-date" name="checkout" required></td>
+        </tr>
+
+        <tr>
+          <td>Adults</td>
+          <td><input type="number" id="adult" name="total_adults" placeholder="2" min="1" required></td> 
+      </tr>
+      <tr>
+        <td>Children</td>
+        <td><input type="number" id="child" name="total_children" placeholder="2" min="0" required></td>
+      </tr>
+      <tr>
+        <td>Select Room Preference</td>
+        <td>
+          <select>
+          <option>Choose a Room from the List</option>
+          <option value="connecting">Connecting</option>
+          <option value="adjoining">Adjoining</option>
+          <option value="adjacent">Adjacent</option>
+      </select>
+    </td>
+      </tr>
+       <tr> 
+    <td>Packages</td> 
+    <td><select name="City"> 
+    <option value="-1" selected>Choose a packages</option> 
+    <option value="New Delhi">New Delhi</option>
+    <option value="Manali">Manali</option>
+    <option value="Goa">Goa</option>
+    <option value="Kerala"> Kerala</option>
+    <option value="Bangalore">Bangalore </option>
+    <option value="Ooty">Ooty </option>
+    <option value="Darjeeling"> Darjeeling</option>
+    <option value="Jaipur">Jaipur </option>
+    <option value="Jammu"> Jammu</option>
+    <option value="Kashmir">Kashmir </option>
+    <option value="Dharamshala ">Dharamshala </option>
+    <option value="Nainital"> Nainital</option>
+    <option value="Shillong">Shillong </option>
+    <option value="Dalhousie"> Dalhousie</option>
+    <option value="Mussoorie">Mussoorie </option>
+    <option value=" McLeod Ganj"> McLeod Ganj </option>
+    <option value="Auli">Auli </option>
+    <option value="Srinagar">Srinagar </option> 
+    <option value=" Leh-Ladakh"> Leh-Ladakh </option>
+    <option value="Gulmarg"> Gulmarg</option>
+    <option value="Gangtok">Gangtok </option>
+    <option value="Mahabaleshwar">Mahabaleshwar </option> 
+    <option value="Lonavala">Lonavala </option>
+    <option value="Coorg">Coorg </option>
+    <option value="Chikmagalur">Chikmagalur </option>
+    <option value="Munnar">Munnar </option>
+    </select></td>
+    </tr> 
+    <tr>
+    <td>Anything Else?</td>
+    <td><textarea text="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+    </td>
+   </tr>
+   <tr> 
+    <td><button onclick="myFunction()">Book Your Package</button></td>
+    </tr>
+
+
+<script>
+function myFunction() {
+  confirm("your response has been submitted successfully");
+}
+</script>
+</table> 
+  </form> 
+  </body> 
+ </html>
+
